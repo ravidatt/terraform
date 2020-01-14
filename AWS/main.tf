@@ -18,4 +18,10 @@ module "networking" {
   accessip     = "${var.accessip}"
 }
 
+module "compute" {
+  source       = "./compute"
+  key_name     = "${var.key_name}"
+  public_key_path = "${var.public_key_path}"
+}
+
 
