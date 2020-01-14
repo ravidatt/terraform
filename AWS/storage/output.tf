@@ -1,5 +1,3 @@
-output "bucketname"{
-
-value="${aws_s3_bucket.tf_code.id}"
-    
+output "bucketname" {
+  value = "${aws_s3_bucket.tf_code.id}"
 }
